@@ -1,0 +1,49 @@
+public class LinearEquation {
+
+initialize variables x and y
+initialize slope variable
+initialize variables x1 and x2
+
+    public LinearEquation(int x, int y) {
+        returns x and y
+    }
+
+        public int LinearEquation(int x) {
+            returns x, accepts one parameter (for x3)
+        }
+
+    public double slope(double x, double y, int x2, int y2) {
+        returns slope
+    }
+
+    public double y_intercept() {
+        returns y - intercept
+    }
+
+    public double rise() {
+        return y-y2;
+    }
+
+    public double run() {
+        return x-x2;
+    }
+
+    public String slopeIntercept() {
+        return the equation of the line passing through
+        x1,y2 and x2,y2 in slope intercept form
+    }
+
+    public double distanceBetweenPoints() {
+        returns the distance between the two coordinate points;
+    }
+    public double yCoordinateCalc() {
+        returns x3 and its y coordinate relative to the slope of the line
+        passing through x1,x2 and y1,y2
+    }
+
+    public String toString () {
+        returns  first ordered pair, second ordered pair, slope of line, y-intercept
+          and, the equation of the line passing through the two ordered pairs in slope
+           intercept form (separate lines)
+    }
+}

@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        //asking for first ordered pair
+
+        //getting x coordinate from string to int
+
+        //getting y coordinate from string to int
+
+        //asking for second ordered pair
+
+        //getting x2 coordinate from string to int
+
+        //getting y2 coordinate from string to int
+
+
+        //stores first and second ordered pair in an instance of LinearEquation
+
+        //calls the slope, y_intercept,slopeIntercept,distanceBetweenPoints methods
+
+        //prints first ordered pair, second ordered pair, slope of line, y-intercept,
+        and the equation of the line passing through the two ordered pairs in slope
+        intercept form
+
+
+
+        //prompts the user 3rd x value and coordinate point
+        //calls the yCoordinateCalc method and prints ordered pair that has a point
+
+
+
+    }
+}
