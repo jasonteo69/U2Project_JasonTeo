@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class EquationRunner {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
@@ -44,7 +44,6 @@ public class Main {
         int x3 = Integer.parseInt(c);
         calc.LinearEquation(x3);
         System.out.println("Solved coordinate point is: (" + x3 + ", " + calc.yCoordinateCalc() + ")");
-
 
 
     }

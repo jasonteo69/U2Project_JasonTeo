@@ -15,11 +15,11 @@ public class LinearEquation {
         this.x2 = x2;
         this.y2 = y2;
         slope = rise()/run();
-        return Math.round(slope * 100) / 100;
+        return (double) Math.round((slope * 100)) / 100;
     }
 
     public double y_intercept() {
-        return Math.round(y - (slope * x) * 100) / 100;
+        return (double) Math.round(y - (slope * x * 100)) / 100;
     }
 
     public double rise() {
@@ -33,11 +33,11 @@ public class LinearEquation {
     public String slopeIntercept() {
         if (y_intercept() > 0) {
             return "y = " + rise() + "/" + run() + "x " + "+ " + y_intercept(); }
-        else { return "y = " + rise() + "/" + run() + "x " + "- " + y_intercept(); }
+        else { return "y = " + rise() + "/" + run() + "x " + y_intercept(); }
     }
 
     public double distanceBetweenPoints() {
-        return Math.round(Math.sqrt((Math.pow(run(), 2)) + Math.pow(rise(), 2)) * 100) / 100;
+        return (double) Math.round(Math.sqrt((Math.pow(run(), 2)) + Math.pow(rise(), 2)) * 100) / 100;
     }
     public double yCoordinateCalc() {
         return (x*slope) + y_intercept();
