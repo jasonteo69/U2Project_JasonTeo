@@ -1,8 +1,9 @@
 public class LinearEquation {
 
 initialize variables x and y
-initialize slope variable
+initialize slope variable (slope intercept)
 initialize variables x1 and x2
+initialize yIntercept variable (calculate x3)
 
     public LinearEquation(int x, int y) {
         returns x and y

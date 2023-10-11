@@ -2,6 +2,7 @@ public class LinearEquation {
     private int x,y;
     private double slope;
     public int x2, y2;
+    public double yIntercept;
     public LinearEquation(int x, int y) {
         this.x = x;
         this.y = y;
@@ -11,15 +12,15 @@ public class LinearEquation {
         return x;
     }
 
-    public double slope(double x, double y, int x2, int y2) {
+    public void slope(double x, double y, int x2, int y2) {
         this.x2 = x2;
         this.y2 = y2;
-        slope = rise()/run();
-        return (double) Math.round((slope * 100)) / 100;
+        slope = (double) Math.round((rise() / run()) * 100) / 100;
     }
 
     public double y_intercept() {
-        return (double) Math.round(y - (slope * x * 100)) / 100;
+        yIntercept = (double) Math.round(y - (slope * x * 100)) / 100;
+        return yIntercept;
     }
 
     public double rise() {
@@ -40,7 +41,7 @@ public class LinearEquation {
         return (double) Math.round(Math.sqrt((Math.pow(run(), 2)) + Math.pow(rise(), 2)) * 100) / 100;
     }
     public double yCoordinateCalc() {
-        return (x*slope) + y_intercept();
+        return (double) Math.round((slope * x) * 100) / 100 + yIntercept;
     }
 
     public String toString () {
